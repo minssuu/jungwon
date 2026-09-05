@@ -848,7 +848,7 @@ function renderCharacterDetail(slug) {
       ${(character.lifeLead || character.life) ? `<section class="detail-block reveal"><h2>생활</h2>${renderEditorialCopy(character.lifeLead, character.life)}</section>` : ""}
       ${(character.habitLead || character.habit) ? `<section class="detail-block reveal"><h2>버릇</h2>${renderEditorialCopy(character.habitLead, character.habit)}</section>` : ""}
       ${(character.affectionLead || character.affection) ? `<section class="detail-block reveal"><h2>관계의 온도</h2>${renderEditorialCopy(character.affectionLead, character.affection)}</section>` : ""}
-      ${character.voiceLine ? `<section class="detail-block detail-voice reveal"><h2>말씨</h2><p>“${escapeHtml(character.voiceLine)}”</p></section>` : ""}
+      ${character.voiceLine ? `<section class="detail-block detail-voice reveal"><h2>한 마디</h2><p>“${escapeHtml(character.voiceLine)}”</p></section>` : ""}
     </article>`;
 }
 
