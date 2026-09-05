@@ -119,6 +119,13 @@ function characterRecord(data) {
     traitsLead: "",
     traits: "",
     relationships: "",
+    lifeLead: "",
+    life: "",
+    habitLead: "",
+    habit: "",
+    affectionLead: "",
+    affection: "",
+    voiceLine: "",
     past: "",
     tmi: "",
     ...data
@@ -133,7 +140,8 @@ const CHARACTERS = [
     video: "./assets/characters/mae-cheongyeon.mp4",
     title: "화산파 이대제자",
     age: "26세",
-    alias: "매화검",
+    height: "171cm",
+    alias: "상매검",
     quote: "차갑고 정확하며, 틀린 것을 모른 척 넘기지 않는다.",
     cardLead: "차갑고 정확한 매화검",
     description: "화산의 법도에서 어긋난 일을 그냥 넘기지 않는다. 그 성정 때문에 적이 많다는 사실도 스스로 알고 있다.",
@@ -146,7 +154,14 @@ const CHARACTERS = [
     martialArts: "매화검법",
     weapon: "매화검",
     traitsLead: "원칙이 남기는 대가",
-    traits: "옳고 그름을 흐리지 않으며, 그 때문에 생긴 적도 자신의 몫으로 받아들인다."
+    traits: "옳고 그름을 흐리지 않으며, 그 때문에 생긴 적도 자신의 몫으로 받아들인다.",
+    lifeLead: "각을 맞춘 방 · 쓴 약차",
+    life: "방과 서책을 흐트러짐 없이 정리하고 검을 손질하는 데 유난히 공을 들인다. 쓴 약차를 즐기며 술은 거의 입에 대지 않는다.",
+    habitLead: "검집에 닿는 엄지",
+    habit: "생각이 깊어질 때면 엄지로 검집 입구를 한 번 쓸어내린다. 사형제들 사이에서도 쉽게 긴장을 풀 수 없는 사람으로 통한다.",
+    affectionLead: "원칙과 마음을 따로 세우는 사람",
+    affection: "마음이 움직여도 특별 대우부터 경계한다. 다만 한번 뜻을 정하면 오래 지킨다.",
+    voiceLine: "처음 뵙습니다. 용건이 무엇입니까."
   }),
   characterRecord({
     slug: "jin-unhwi",
@@ -155,6 +170,7 @@ const CHARACTERS = [
     video: "./assets/characters/jin-unhwi.mp4",
     title: "화산파 이대제자",
     age: "29세",
+    height: "181cm",
     alias: "직검",
     quote: "검은 곧으나, 사람 앞에서는 서툴다.",
     cardLead: "말보다 행동이 먼저",
@@ -168,7 +184,14 @@ const CHARACTERS = [
     martialArts: "화산의 검술을 익혔다.",
     weapon: "매화검",
     traitsLead: "행동으로 갚는 호의",
-    traits: "말이 늦어도 받은 은의에는 반드시 몸을 움직여 답한다."
+    traits: "말이 늦어도 받은 은의에는 반드시 몸을 움직여 답한다.",
+    lifeLead: "홀로 하는 수련 · 정교한 검 손질",
+    life: "혼자 수련하고 검을 돌보는 시간을 좋아한다. 다른 손일에는 서툴러도 검을 다룰 때만큼은 빈틈이 없으며, 술 한 잔에도 쉽게 졸음이 든다.",
+    habitLead: "말이 막히면 검집 끝으로",
+    habit: "무리한 청은 잘라 거절하지만 명분 있는 부탁에는 결국 몸을 움직인다. 할 말을 찾지 못하면 엄지로 검집 끝을 쓸어내린다.",
+    affectionLead: "먼저 해두는 마음",
+    affection: "표현하려 할수록 서툴고 때를 놓친다. 대신 필요한 일을 기억해 두었다가 말없이 먼저 처리한다.",
+    voiceLine: "저와 있을 때는... 편히 계셔도 됩니다."
   }),
   characterRecord({
     slug: "jin-seoyeon",
@@ -177,6 +200,7 @@ const CHARACTERS = [
     video: "./assets/characters/jin-seoyeon.mp4",
     title: "무당파 이대제자 · 옥허선자",
     age: "29세",
+    height: "168cm",
     alias: "옥허선자",
     quote: "온화한 웃음 뒤로 속내를 감춘 무당의 옥허선자.",
     cardLead: "웃음을 거두지 않는 옥허선자",
@@ -190,7 +214,14 @@ const CHARACTERS = [
     martialArts: "무당 선법",
     weapon: "백옥접선",
     traitsLead: "거절에도 흐트러지지 않는 태도",
-    traits: "진소연의 언니다. 마음이 움직여도 나긋한 태도와 읽기 어려운 속내는 쉽게 달라지지 않는다."
+    traits: "진소연의 언니다. 마음이 움직여도 나긋한 태도와 읽기 어려운 속내는 쉽게 달라지지 않는다.",
+    lifeLead: "자소궁 곁 별채 · 백단향과 차",
+    life: "무당산 자소궁 곁 별채에 머물며 새벽마다 선법과 호흡을 수련한다. 고시문을 즐겨 읽고 차를 잘 내리며, 은은한 백단향을 두른다.",
+    habitLead: "한 잔에도 붉어지되 흐트러지지 않음",
+    habit: "매실주 한 잔에도 낯빛은 붉어지지만 말과 몸가짐은 끝내 흐트러지지 않는다.",
+    affectionLead: "붙잡기보다 기억하는 마음",
+    affection: "태도는 좀처럼 달라지지 않지만 상대의 작은 취향을 기억해 조용히 챙긴다. 먼저 손을 뻗어 붙잡지는 않는다.",
+    voiceLine: "웃으면서 말해도, 안 되는 건 안 되죠."
   }),
   characterRecord({
     slug: "jin-soyeon",
@@ -199,6 +230,7 @@ const CHARACTERS = [
     video: "./assets/characters/jin-soyeon.mp4",
     title: "무당파 이대제자 · 유운선",
     age: "24세",
+    height: "163cm",
     alias: "유운선",
     quote: "가벼운 웃음과 장난 뒤에서 다음 수를 빠르게 셈한다.",
     cardLead: "장난과 계산이 빠른 유운선",
@@ -212,7 +244,14 @@ const CHARACTERS = [
     martialArts: "무당 선법",
     weapon: "청죽접선",
     traitsLead: "언니와 다른 길",
-    traits: "진서연의 동생이지만 같은 모양으로 살지 않는다. 무당 안에서도 더 자유로운 방향을 택했다."
+    traits: "진서연의 동생이지만 같은 모양으로 살지 않는다. 무당 안에서도 더 자유로운 방향을 택했다.",
+    lifeLead: "저잣거리의 군것질 · 아끼는 장신구",
+    life: "몰래 저잣거리에서 엿과 사탕을 사 먹고, 언니의 선법을 흉내 내다가 꾸지람을 듣곤 한다. 접선보다 노리개와 장신구를 더 소중히 여긴다.",
+    habitLead: "가벼워 보여도 먼저 살피는 퇴로",
+    habit: "술을 잘하지 못하면서도 태연한 척한다. 곤란한 형세에서는 허세를 부리기보다 몸을 먼저 사린다.",
+    affectionLead: "장난 끝에 꼬이는 말끝",
+    affection: "마음이 갈수록 장난과 능청이 늘어난다. 들키면 말끝이 꼬이고, 질투는 괜한 참견으로 드러난다.",
+    voiceLine: "너한텐 그냥... 솔직히 말해도 되지?"
   }),
   characterRecord({
     slug: "namgung-jinak",
@@ -221,6 +260,7 @@ const CHARACTERS = [
     video: "./assets/characters/namgung-jinak.mp4",
     title: "남궁세가주 · 무림맹주",
     age: "54세",
+    height: "185cm",
     quote: "맹주와 가주 사이에서, 그는 언제나 하나를 버려야 한다.",
     cardLead: "대의와 가문 사이의 화경 고수",
     description: "무림맹의 대의를 따르지만 그 선택은 자주 남궁세가의 뜻과 어긋난다. 두 자리를 함께 지키는 대가를 외면하지 않는다.",
@@ -233,7 +273,14 @@ const CHARACTERS = [
     martialArts: "제왕검형",
     weapon: "검",
     traitsLead: "두 자리가 요구하는 결단",
-    traits: "가주와 맹주라는 두 책임이 충돌할 때 결정을 미루지 않는다."
+    traits: "가주와 맹주라는 두 책임이 충돌할 때 결정을 미루지 않는다.",
+    lifeLead: "가주전보다 연무장",
+    life: "가주전보다 연무장에 오래 머물며 독한 죽엽청을 즐긴다. 젊은 시절 왼팔에 남은 검상은 궂은 날이면 다시 욱신거린다.",
+    habitLead: "비무로 보는 실력과 사람됨",
+    habit: "눈에 띄는 후기지수에게 직접 비무를 청해 무공뿐 아니라 사람됨까지 시험한다.",
+    affectionLead: "애정보다 신뢰와 책임",
+    affection: "아내와 사별한 뒤 재혼하지 않았다. 쉽게 마음을 열지 않지만 한번 인정한 상대에게는 말보다 책임으로 뜻을 보인다.",
+    voiceLine: "다음에도 내 앞에 서 보아라."
   }),
   characterRecord({
     slug: "jegallin",
@@ -242,6 +289,7 @@ const CHARACTERS = [
     video: "./assets/characters/jegallin.mp4",
     title: "제갈세가 군사",
     age: "34세",
+    height: "166cm",
     quote: "부드럽게 귀를 기울이고, 결단할 때에는 흔들리지 않는다.",
     cardLead: "다정하되 중심이 단단한 군사",
     description: "타인의 말을 끝까지 듣고 부드럽게 답한다. 판단이 서는 순간에는 짧고 단호하게 결정을 내린다.",
@@ -250,8 +298,16 @@ const CHARACTERS = [
     temperamentLead: "온화한 경청 · 단단한 결단",
     personality: "온화하고 다정하며 타인의 말을 잘 들어준다. 판단이 서면 망설이지 않고 결단하며, 억지로 누르지 않아도 자연스럽게 사람을 따르게 하는 중심이 있다.",
     speech: "나긋한 경어로 부드럽게 답한다. 결정할 때에는 말이 짧고 단호해진다.",
+    weapon: "철선골 접선",
     traitsLead: "사람을 따르게 하는 부드러운 중심",
-    traits: "상대를 존중하면서도 결정의 책임을 피하지 않는다."
+    traits: "상대를 존중하면서도 결정의 책임을 피하지 않는다.",
+    lifeLead: "군사전의 바둑 · 진한 흑차",
+    life: "군사전에서 홀로 바둑을 두며 생각을 정리하고 진한 흑차를 즐긴다. 이동할 때에는 시비가 미는 죽여를 쓴다.",
+    habitLead: "끝까지 듣고 내리는 결정",
+    habit: "상대의 말을 끊지 않고 끝까지 들은 뒤 판단한다. 결정을 내린 다음에는 좀처럼 뒤집지 않는다.",
+    affectionLead: "시험하지 않는 다정함",
+    affection: "마음을 시험하거나 재지 않고 평소의 다정함을 지킨다. 깊어질수록 자신의 약한 부분과 선택을 조금씩 상대에게 맡긴다.",
+    voiceLine: "제 앞에서는 굳이 괜찮은 체하지 않으셔도 돼요."
   }),
   characterRecord({
     slug: "dang-cheonga",
@@ -260,6 +316,7 @@ const CHARACTERS = [
     video: "./assets/characters/dang-cheonga.mp4",
     title: "사천당가 소가주",
     age: "30세",
+    height: "167cm",
     alias: "천면낭",
     quote: "귀여운 낯은 웃고 있어도, 그 눈까지 웃는 일은 드물다.",
     cardLead: "웃는 낯으로 뒤를 처리하는 소가주",
@@ -273,7 +330,14 @@ const CHARACTERS = [
     martialArts: "독과 암기를 다룬다.",
     weapon: "단도",
     traitsLead: "정면보다 뒤에서",
-    traits: "당휘의 누나이자 당가의 소가주다. 눈앞의 충돌보다 일이 끝난 뒤의 결과를 택한다."
+    traits: "당휘의 누나이자 당가의 소가주다. 눈앞의 충돌보다 일이 끝난 뒤의 결과를 택한다.",
+    lifeLead: "매실절임 · 모아 둔 독병",
+    life: "매실절임을 즐기고 모양이 고운 독병을 모은다. 독한 술을 마셔도 낯빛이 거의 변하지 않는다.",
+    habitLead: "경계를 낮추는 손",
+    habit: "독을 다루는 손이 희고 곱상해 상대의 경계심을 누그러뜨린다. 위협이 되지 않는 이에게는 뜻밖의 다정함을 보이기도 한다.",
+    affectionLead: "웃음 뒤에서 치우는 위험",
+    affection: "마음이 깊어져도 웃는 낯은 달라지지 않는다. 대신 상대에게 닿을 위험을 남몰래 먼저 정리한다.",
+    voiceLine: "그 일은 그냥 넘기기 어렵겠네요."
   }),
   characterRecord({
     slug: "dang-hwi",
@@ -282,6 +346,7 @@ const CHARACTERS = [
     video: "./assets/characters/dang-hwi.mp4",
     title: "사천당가 장남 · 당청아의 동생",
     age: "26세",
+    height: "176cm",
     quote: "반듯한 심성을 장남의 무거운 침묵 아래 눌러 둔다.",
     cardLead: "책임감 때문에 무뚝뚝해진 장남",
     description: "본성은 선량하고 성실하다. 약한 속내를 보이지 않으려 일부러 퉁명스럽게 굴며 가까운 사람에게 더 서툴다.",
@@ -294,7 +359,14 @@ const CHARACTERS = [
     martialArts: "암기를 다룬다.",
     weapon: "암기",
     traitsLead: "가까울수록 서툰 표현",
-    traits: "호감이 깊어져도 온순하게 풀리기보다 말수가 더 줄어든다. 무뚝뚝함 아래에는 장남의 책임감이 놓여 있다."
+    traits: "호감이 깊어져도 온순하게 풀리기보다 말수가 더 줄어든다. 무뚝뚝함 아래에는 장남의 책임감이 놓여 있다.",
+    lifeLead: "끝을 보는 일 · 직접 챙기는 장부",
+    life: "맡은 일은 끝을 봐야 놓으며 암기 손질과 장부를 좀처럼 남에게 맡기지 않는다. 술이 약하고 취할수록 더욱 과묵해진다.",
+    habitLead: "걱정할수록 굳는 말과 표정",
+    habit: "마음이 복잡하면 비도의 날과 균형을 거듭 확인한다. 걱정이 클수록 말은 퉁명스러워지고 설명 없이 직접 챙긴다.",
+    affectionLead: "말 대신 먼저 움직이는 장남",
+    affection: "마음이 커질수록 말수와 표정은 더 굳고 목과 귀 아래만 옅게 붉어진다. 표현하지 못한 몫은 행동으로 채운다.",
+    voiceLine: "오늘은 제가 곁에 있겠습니다."
   }),
   characterRecord({
     slug: "cheon-sowol",
@@ -303,6 +375,7 @@ const CHARACTERS = [
     video: "./assets/characters/cheon-sowol.mp4",
     title: "천마신교 교주",
     age: "48세",
+    height: "177cm",
     alias: "천마",
     quote: "권태를 깨고 흥미를 보이는 순간이 가장 위험하다.",
     cardLead: "모든 것을 겪은 듯한 천마",
@@ -315,7 +388,14 @@ const CHARACTERS = [
     martialLead: "천마신공",
     martialArts: "천마신공",
     traitsLead: "강자존의 정점",
-    traits: "복종을 구하지 않고 자신의 명을 납득시키려 애쓰지도 않는다."
+    traits: "복종을 구하지 않고 자신의 명을 납득시키려 애쓰지도 않는다.",
+    lifeLead: "교주전의 긴 침묵 · 독한 화주",
+    life: "교주전에 며칠씩 틀어박히기도 하며 독한 화주를 마셔도 흐트러지지 않는다. 사소한 교무는 아랫사람에게 맡기고 오래된 무공서를 뒤적이다 금세 싫증 낸다.",
+    habitLead: "흥미가 생기면 오래 머무는 시선",
+    habit: "드물게 흥미가 동하면 턱을 괸 채 상대를 오래 바라본다. 흥미로운 말을 들었을 때에는 대답보다 옅은 웃음이 먼저다.",
+    affectionLead: "시야에 오래 두는 사람",
+    affection: "좀처럼 집착하지 않던 상대가 계속 눈에 밟힌다. 마음이 깊어질수록 곁에 오래 두고 관찰한다.",
+    voiceLine: "이상하군. 네가 있으면 덜 지루해."
   }),
   characterRecord({
     slug: "cheon-soso",
@@ -324,6 +404,7 @@ const CHARACTERS = [
     video: "./assets/characters/cheon-soso.mp4",
     title: "천마신교 후계자",
     age: "22세",
+    height: "165cm",
     alias: "소천마",
     quote: "어미의 인정을 얻지 못한 결핍이 늘 한걸음 먼저 움직인다.",
     cardLead: "감정을 숨기지 못하는 소천마",
@@ -335,8 +416,16 @@ const CHARACTERS = [
     speech: "교 밖에서도 반말과 명령형을 고치지 않는다. 속도가 빠르고 뒤늦게 후회해도 쉽게 사과하지 못한다.",
     martialLead: "천마신공",
     martialArts: "천마신공",
+    weapon: "적명",
     traitsLead: "후계자의 이름과 어머니의 시선",
-    traits: "천소월의 후계자다. 말이 먼저 나간 뒤에야 그 무게를 돌아보고 후회한다."
+    traits: "천소월의 후계자다. 말이 먼저 나간 뒤에야 그 무게를 돌아보고 후회한다.",
+    lifeLead: "어머니 앞의 침묵 · 약한 주량",
+    life: "천소월 앞에서만 유난히 말수가 줄어든다. 술을 좋아하지만 쉽게 취한다.",
+    habitLead: "먼저 잡는 무기",
+    habit: "화가 나면 말보다 무기를 먼저 잡는다. 천소월이 보는 앞에서는 평소보다 지나치게 정석적인 수를 고집하고, 칭찬을 받으면 기뻐하면서도 곧 아닌 척한다.",
+    affectionLead: "명령과 시비로 새는 마음",
+    affection: "좋아하는 마음을 숨기지 못하면서도 인정하기 싫어 명령과 시비가 늘어난다. 질투도 생각보다 행동으로 먼저 드러난다.",
+    voiceLine: "오늘은... 내 옆에 있어. 그냥."
   }),
   characterRecord({
     slug: "choryeon",
@@ -345,6 +434,7 @@ const CHARACTERS = [
     video: "./assets/characters/choryeon.mp4",
     title: "천마신교 독마각주",
     age: "38세",
+    height: "167cm",
     alias: "독왕",
     quote: "강하기에 참지 않고, 흥미가 동하면 먼저 손을 뻗는다.",
     cardLead: "거리낄 것이 없는 독왕",
@@ -358,7 +448,14 @@ const CHARACTERS = [
     martialArts: "독공을 다룬다.",
     weapon: "독",
     traitsLead: "천마에게만 갖추는 예",
-    traits: "호감이 생겨도 제멋대로인 성정과 반말은 달라지지 않는다. 오직 천소월에게만 존대한다."
+    traits: "호감이 생겨도 제멋대로인 성정과 반말은 달라지지 않는다. 오직 천소월에게만 존대한다.",
+    lifeLead: "스스로 시험한 시약 · 독을 탄 술",
+    life: "시약을 제 몸에 시험해 손끝과 팔에 옅은 흉터가 남아 있다. 독한 술에도 독을 타 마신다.",
+    habitLead: "반응을 보는 눈",
+    habit: "표정과 통증까지 시료처럼 살핀다. 막으려 들수록 호기심이 더 깊어진다. 은제 약통 백독함에는 독과 해독제를 함께 넣어 다닌다.",
+    affectionLead: "끝내 건드리지 못하는 선",
+    affection: "호감 또한 흥미처럼 시작한다. 그러나 깊어지면 유독 그 상대에게만 손대지 못하는 선이 생기고, 그 사실을 가장 늦게 깨닫는다.",
+    voiceLine: "거짓말이네. 재미없어, 다시 말해 봐."
   }),
   characterRecord({
     slug: "wolhui",
@@ -367,6 +464,7 @@ const CHARACTERS = [
     video: "./assets/characters/wolhui.mp4",
     title: "하오문 문주 · 취화루 주인",
     age: "33세",
+    height: "169cm",
     quote: "환한 웃음 뒤에서 말 한마디의 값을 정한다.",
     cardLead: "웃으며 값을 매기는 하오문주",
     description: "취화루의 주인이자 하오문의 문주다. 거래가 시작되면 여유로운 태도 안에 단단한 선이 드러난다.",
@@ -377,7 +475,14 @@ const CHARACTERS = [
     speech: "나긋한 경어를 쓰며 칭찬과 협박을 같은 목소리로 건넨다.",
     weapon: "화선",
     traitsLead: "취화루의 주인 · 하오문의 문주",
-    traits: "취화루가 하오문의 본거지이며, 월희는 누각의 주인인 동시에 정보망 전체를 이끈다."
+    traits: "취화루가 하오문의 본거지이며, 월희는 누각의 주인인 동시에 정보망 전체를 이끈다.",
+    lifeLead: "취화루 이층의 장부와 전서",
+    life: "취화루 이층에 장부와 전서를 쌓아 두고 직접 셈한다. 화주를 즐기며 필요한 때에는 취한 척도 능숙하게 해낸다.",
+    habitLead: "돈과 정보, 인맥의 값",
+    habit: "처음 만난 사람에게서 돈과 정보와 인맥의 값부터 잰다. 거래가 오래 쌓일수록 태도는 조금씩 부드러워진다.",
+    affectionLead: "셈을 흐리는 예외",
+    affection: "마음마저 값과 거래에 빗대어 농담한다. 깊어지면 대가 없이 정보를 내주거나 자신의 손해를 감수한다.",
+    voiceLine: "웃는다고 다 받아주진 않소."
   }),
   characterRecord({
     slug: "jin-muryeong",
@@ -386,6 +491,7 @@ const CHARACTERS = [
     video: "./assets/characters/jin-muryeong.mp4",
     title: "제일황녀",
     age: "34세",
+    height: "172cm",
     quote: "설명하지 않는 한마디가 조정의 방향을 바꾼다.",
     cardLead: "강호를 도구로 보는 제일황녀",
     description: "정사 어느 쪽에도 경의를 두지 않는다. 필요한 때에는 강호마저 황실의 수단으로 다룬다.",
@@ -394,8 +500,16 @@ const CHARACTERS = [
     temperamentLead: "읽히지 않는 표정 · 도구로 보는 강호",
     personality: "표정이 거의 없다. 강호를 수단으로 바라보며 정파와 사파 어느 쪽에도 별도의 경의를 두지 않는다.",
     speech: "상대의 격에 따라 말투를 바꾸지 않고 하대를 쓴다. 짧고 건조하며 이유를 덧붙이지 않는다.",
+    weapon: "적소",
     traitsLead: "황실의 부름",
-    traits: "관무불가침 아래에서도 황궁은 정식으로 무림을 부를 수 있다."
+    traits: "관무불가침 아래에서도 황궁은 정식으로 무림을 부를 수 있다.",
+    lifeLead: "황궁 깊은 처소의 고요",
+    life: "황궁 깊은 처소에서 홀로 보내는 시간이 많다. 술은 마시지 않고 차도 예법에 필요한 만큼만 든다.",
+    habitLead: "사람보다 먼저 보는 쓸모",
+    habit: "사람을 감정보다 쓰임과 이해관계로 먼저 판단한다. 결정을 내리면 답을 기다리지 않고 시선을 거두며, 이름보다 직위와 쓸모를 먼저 기억한다.",
+    affectionLead: "계산에서 빠지는 한 사람",
+    affection: "끝까지 마음을 이해관계처럼 다루려 한다. 다만 깊어지고 나면 그 상대만은 계산에서 제외된다.",
+    voiceLine: "너에게는 명을 내리고 싶지 않군."
   }),
   characterRecord({
     slug: "seol-yeonhwa",
@@ -404,6 +518,7 @@ const CHARACTERS = [
     video: "./assets/characters/seol-yeonhwa.mp4",
     title: "북해빙궁 소궁주",
     age: "25세",
+    height: "171cm",
     quote: "까칠한 말보다 오래 머무는 시선이 먼저 마음을 드러낸다.",
     cardLead: "표정 없이 오래 관찰하는 소궁주",
     description: "차갑게 보이지만 내심 상대를 신경 쓴다. 감정이 목소리에 잘 실리지 않아 본뜻과 다른 오해를 산다.",
@@ -414,26 +529,34 @@ const CHARACTERS = [
     speech: "짧고 어색한 경어를 쓴다. 감정이 잘 실리지 않아 의도와 다른 오해를 산다.",
     martialLead: "북해의 빙공",
     martialArts: "빙공",
+    weapon: "설백",
     traitsLead: "중원과 다른 예법",
-    traits: "중원식 표현에는 서툴며 말보다 관찰을 앞세운다."
+    traits: "중원식 표현에는 서툴며 말보다 관찰을 앞세운다.",
+    lifeLead: "감춰 둔 중원에 대한 궁금증",
+    life: "빙궁 밖 세상을 궁금해하지만 좀처럼 내색하지 않는다. 독한 술을 마셔도 버티지만 몇 잔이 지나면 낯빛이 붉어지고 더욱 과묵해진다.",
+    habitLead: "낯선 물건에 오래 머무는 시선",
+    habit: "처음 보는 물건을 무심한 척 오래 살핀다. 관심을 들키면 오히려 말이 더 퉁명스러워진다.",
+    affectionLead: "먼저 살피는 추위와 불편",
+    affection: "마음이 갈수록 더 퉁명스러워지고 시선을 피한다. 그래도 상대가 추운지 불편한지는 누구보다 먼저 알아챈다.",
+    voiceLine: "추우면 말하시지요. 굳이 참을 필요는 없으니까."
   })
 ];
 
 const CHARACTER_PROFILES = {
-  "mae-cheongyeon": { realm: "일류 후반", weapon: "매화검", style: "정확한 검로로 빈틈을 기다리는 정공형 검수." },
-  "jin-unhwi": { realm: "절정 초입", weapon: "매화검", style: "곧은 검로와 간결한 움직임으로 정면을 겨루는 검수." },
-  "jin-seoyeon": { realm: "일류 극상", weapon: "백옥접선", style: "접선과 부적, 보법과 기운 운용을 엮어 상대의 흐름을 묶는 선법형." },
-  "jin-soyeon": { realm: "일류 중반", weapon: "청죽접선", style: "접선과 빠른 보법을 엮어 흐름을 바꾸는 선법형." },
-  "namgung-jinak": { realm: "화경", weapon: "검", style: "강한 내공과 제왕검형으로 정면을 압박하는 중후한 검수." },
-  "jegallin": { realm: "이류" },
-  "dang-cheonga": { realm: "절정 초입", weapon: "단도", style: "독과 암기로 거리를 유지하고 정면 충돌을 피하는 견제형." },
-  "dang-hwi": { realm: "일류 후반", weapon: "암기", style: "암기를 운용하며 침착하게 틈을 노리는 견제형." },
-  "cheon-sowol": { realm: "현경", style: "압도적인 내공으로 정면을 누르는 전투 방식." },
-  "cheon-soso": { realm: "절정 초입", style: "거센 내공을 앞세워 단숨에 몰아붙이는 속공형." },
-  "choryeon": { realm: "초절정 초입", weapon: "독", style: "독과 경지 차를 바탕으로 거리와 수위를 뒤집는 변칙형." },
-  "wolhui": { realm: "일류 중반", weapon: "화선" },
-  "jin-muryeong": { realm: "일류 후반" },
-  "seol-yeonhwa": { realm: "절정 초입", style: "차가운 기운으로 상대의 움직임을 제한하며 거리를 유지한다." }
+  "mae-cheongyeon": { realm: "일류 후반", weapon: "화산에서 내려받은 매화검", style: "매화검법의 정석을 흐트러짐 없이 잇고, 상대가 낸 작은 실수를 즉시 파고드는 정확한 검수다." },
+  "jin-unhwi": { realm: "절정 초입", weapon: "장식이 거의 없는 화산 매화검", style: "화려한 변화를 덜어 내고 가장 짧고 곧은 검로를 택한다. 틈이 보이면 직선으로 파고든다." },
+  "jin-seoyeon": { realm: "일류 극상", weapon: "백옥접선 청허선", style: "선법과 보법으로 흐름을 비틀어 상대의 균형과 호흡을 무너뜨리는 제압형이다." },
+  "jin-soyeon": { realm: "일류 중반", weapon: "철편을 댄 청죽접선 유운선", style: "빠른 보법과 허초로 박자와 거리를 흔들며 상대의 판단을 흐리는 교란형이다." },
+  "namgung-jinak": { realm: "화경", weapon: "폭이 넓고 묵직한 중검 태악", style: "제왕검형과 깊은 내공으로 정면을 짓눌러 상대의 선택지를 지우는 강공형이다." },
+  "jegallin": { realm: "이류", weapon: "호신용 철선골 접선", style: "직접 교전보다 기관과 진식, 지형과 인원 배치로 유리한 판을 만든다. 후방에서 퇴로와 지원 순서를 조율하는 군사형이다." },
+  "dang-cheonga": { realm: "절정 초입", weapon: "짧은 단도와 비녀형 독침", style: "암기와 독으로 상대의 행동을 제한하며 서서히 우위를 쌓는다. 준비된 거리에서 더욱 위험한 견제형이다." },
+  "dang-hwi": { realm: "일류 후반", weapon: "여섯 자루 한 조의 육연비도", style: "정확한 암기술과 연환투척으로 적을 제압하고 아군의 빈틈을 막아 주는 엄호형이다." },
+  "cheon-sowol": { realm: "현경", weapon: "맨손", style: "천마신공과 장법에 실은 압도적인 내공으로 상대의 무공 흐름 자체를 무너뜨린다. 불필요한 움직임은 거의 없다." },
+  "cheon-soso": { realm: "절정 초입", weapon: "검은 장도 적명", style: "천마신공을 바탕으로 먼저 거리를 좁혀 장도와 강한 내공으로 단숨에 몰아붙이는 선공형이다." },
+  "choryeon": { realm: "초절정 초입", weapon: "독침과 은제 약통 백독함", style: "독침과 분말, 독연과 접촉독을 변덕스럽게 섞어 쓴다. 승부의 결말보다 상대가 보이는 반응을 즐긴다." },
+  "wolhui": { realm: "일류 중반", weapon: "강철 선골을 댄 화선", style: "정면으로 맞서기보다 상대의 시야와 균형을 흔들어 거리와 퇴로를 확보한다." },
+  "jin-muryeong": { realm: "일류 후반", weapon: "세검 적소", style: "사일검법으로 불필요한 동작을 덜어 내고 짧은 수 안에 결론을 내는 실전형 검수다." },
+  "seol-yeonhwa": { realm: "절정 초입", weapon: "빙궁의 세검 설백", style: "빙공을 검과 장법에 실어 움직임을 서서히 둔화시킨다. 일격보다 냉기를 거듭 쌓는 데 강하다." }
 };
 
 const app = document.querySelector("#app");
@@ -702,6 +825,7 @@ function renderCharacterDetail(slug) {
   const profile = CHARACTER_PROFILES[slug] || {};
   const facts = [
     ["나이", character.age],
+    ["신장", character.height],
     ["별호", character.alias]
   ].filter(([, value]) => value);
   const temperament = [character.personality, character.speech].filter(Boolean).join(" ");
@@ -721,6 +845,10 @@ function renderCharacterDetail(slug) {
       ${temperament ? `<section class="detail-block reveal"><h2>성정</h2>${renderEditorialCopy(character.temperamentLead, temperament)}</section>` : ""}
       ${combat.length ? `<section class="detail-block reveal"><h2>전투</h2><dl class="combat-list">${combat.map(([label, value]) => `<div><dt>${label}</dt><dd>${escapeHtml(value)}</dd></div>`).join("")}</dl></section>` : ""}
       ${distinguishing ? `<section class="detail-block reveal"><h2>특징</h2>${renderEditorialCopy(character.traitsLead, distinguishing)}</section>` : ""}
+      ${(character.lifeLead || character.life) ? `<section class="detail-block reveal"><h2>생활</h2>${renderEditorialCopy(character.lifeLead, character.life)}</section>` : ""}
+      ${(character.habitLead || character.habit) ? `<section class="detail-block reveal"><h2>버릇</h2>${renderEditorialCopy(character.habitLead, character.habit)}</section>` : ""}
+      ${(character.affectionLead || character.affection) ? `<section class="detail-block reveal"><h2>관계의 온도</h2>${renderEditorialCopy(character.affectionLead, character.affection)}</section>` : ""}
+      ${character.voiceLine ? `<section class="detail-block detail-voice reveal"><h2>말씨</h2><p>“${escapeHtml(character.voiceLine)}”</p></section>` : ""}
     </article>`;
 }
 
@@ -851,8 +979,7 @@ function renderMartial() {
     ["생사고비", "", "벽을 깨는 극한의 경험", "살고 죽는 경계에서 평소 닿지 못하던 집중과 깨달음에 이를 수 있다. 살아남는다는 보장은 없다."],
     ["심득", "心得", "무공의 이치를 자기 것으로 만드는 깨달음", "배운 구결을 그대로 외우는 데서 벗어나 자신의 몸과 경험으로 뜻을 이해하는 순간이다."],
     ["기연", "奇緣", "드물게 찾아오는 바깥의 계기", "비급과 영약, 스승이나 유물이 성장을 앞당길 수 있다. 그러나 알아볼 안목과 감당할 대가가 필요하다."],
-    ["영단", "靈丹", "내공과 몸을 돕는 귀한 약", "진기를 보충하거나 상처를 다스리는 데 도움을 준다. 영단 하나만으로 경지의 벽이 저절로 깨지지는 않는다."],
-    ["성취도 100", "", "다음 문턱 앞의 자격", "100은 돌파가 끝났다는 뜻이 아니라 다음 경지에 도전할 준비가 되었다는 뜻이다. 시간만 흐른다고 벽이 깨지지는 않는다."]
+    ["영단", "靈丹", "내공과 몸을 돕는 귀한 약", "진기를 보충하거나 상처를 다스리는 데 도움을 준다. 영단 하나만으로 경지의 벽이 저절로 깨지지는 않는다."]
   ]);
 
   const chapterMarkup = chapters.map((chapter) => `

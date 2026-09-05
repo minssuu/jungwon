@@ -1566,6 +1566,13 @@ video {
   line-height: 1.85;
 }
 
+.detail-voice p {
+  color: var(--ink);
+  font-family: "Noto Serif KR", serif;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
 .record-copy {
   margin: 0;
 }
