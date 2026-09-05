@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#101820" />
+    <meta name="description" content="중원축록 — 강호의 세력과 인물을 기록한 비밀 인물록" />
+    <title>중원축록 · 中原逐鹿</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="outer-grain" aria-hidden="true"></div>
+    <div class="site-shell">
+      <header class="topbar">
+        <button class="back-button" type="button" aria-label="이전 기록으로 돌아가기" data-back hidden>
+          <span aria-hidden="true">〈</span>
+        </button>
+        <span class="topbar-spacer" aria-hidden="true"></span>
+        <div class="bgm-controls" role="group" aria-label="배경음악 제어">
+          <button class="bgm-toggle" type="button" aria-label="배경음악 멈춤" aria-pressed="true" data-bgm-toggle>
+            <span aria-hidden="true" data-bgm-icon>■</span>
+          </button>
+          <label class="bgm-volume">
+            <span class="sr-only">배경음악 볼륨</span>
+            <input type="range" min="0" max="100" value="50" step="1" aria-label="배경음악 볼륨" aria-valuetext="50퍼센트" data-bgm-volume>
+          </label>
+        </div>
+      </header>
+
+      <audio src="./assets/bgm/jungwon-chukrok.mp3" autoplay loop preload="auto" data-bgm></audio>
+
+      <main id="app" class="app" tabindex="-1" aria-live="polite"></main>
+
+      <nav class="bottom-nav" aria-label="주요 기록">
+        <a href="#/home" data-route="home">
+          <span class="bottom-nav__hanja">首頁</span>
+          <span>세계관</span>
+        </a>
+        <a href="#/factions" data-route="factions">
+          <span class="bottom-nav__hanja">勢力</span>
+          <span>세력소개</span>
+        </a>
+        <a href="#/characters" data-route="characters">
+          <span class="bottom-nav__hanja">人物</span>
+          <span>인물소개</span>
+        </a>
+        <a href="#/martial" data-route="martial">
+          <span class="bottom-nav__hanja">武學</span>
+          <span>무학록</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="image-modal" data-image-modal hidden role="dialog" aria-modal="true" aria-label="확대 이미지">
+      <div class="image-modal__panel">
+        <button type="button" class="image-modal__close" data-image-close aria-label="확대 이미지 닫기">×</button>
+        <div class="image-modal__viewport" data-image-viewport>
+          <img data-image-modal-target alt="" draggable="false">
+        </div>
+        <div class="image-modal__controls" aria-label="이미지 확대 조절">
+          <button type="button" data-image-zoom-out aria-label="축소">−</button>
+          <button type="button" data-image-reset>맞춤</button>
+          <button type="button" data-image-zoom-in aria-label="확대">＋</button>
+        </div>
+      </div>
+    </div>
+
+    <noscript>이 기록을 열람하려면 JavaScript를 켜 주세요.</noscript>
+    <script src="./app.js"></script>
+  </body>
+</html>
