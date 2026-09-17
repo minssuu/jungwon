@@ -645,7 +645,7 @@ function renderHome() {
       <p class="dynasty-label">명나라<span>(明朝)</span></p>
       <h1 class="section-title era-title">정덕 십오년 · 1520년 봄</h1>
       <div class="era-copy">
-        ${renderWorldFeature("후사 없는 황제", "명 제 10대 황제 정덕제 주후조에게는 후사가 없었다.", "./assets/world/heirless-emperor.webp", "비어 있는 황태자의 자리와 멀리 앉은 황제를 그린 수묵화")}
+        ${renderWorldFeature("후사 없는 황제", "명 제 10대 황제 정덕제 진후조에게는 후사가 없었다.", "./assets/world/heirless-emperor.webp", "비어 있는 황태자의 자리와 멀리 앉은 황제를 그린 수묵화")}
         ${renderWorldFeature("갈라진 조정 · 비어 있는 황태자의 자리", "환관과 권신, 종친이 조정을 나눠 쥐고, 비어 있는 황태자의 자리는 누구도 입에 올리지 못하는 천하의 가장 무거운 문제가 되었다.", "./assets/world/divided-court.webp", "빈 자리를 사이에 두고 갈라선 조정을 그린 수묵화")}
         ${renderWorldFeature("침묵 속의 제일황녀", "그 사이, 제일황녀 '진무령'은 그 침묵의 틈에서 조용히 사람과 권력을 모으며, 자신의 세력을 키워가고 있다.", "./assets/world/first-princess.webp", "황궁 안에서 조용히 권력을 모으는 제일황녀를 그린 수묵화")}
       </div>
